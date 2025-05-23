@@ -53,5 +53,5 @@ int main() {
     t2.display();
     cout << "\nTeacher 3:\n";
     t3.display();
-    return 0;
+    return 0; 
 }
