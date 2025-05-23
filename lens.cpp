@@ -10,7 +10,6 @@ public:
     float texp;
     float tsalary;
 
-    // Default constructor
     Teacher() {
         tempid = "Un Defined";
         tdept = "Un Assigned";
@@ -18,14 +17,12 @@ public:
         tsalary = 0;
     }
 
-    // Constructor with name, dob, and salary
     Teacher(string s_tname, string s_tdob, float s_tsalary) {
         tname = s_tname;
         tdob = s_tdob;
         tsalary = s_tsalary;
     }
 
-    // Constructor with all details
     Teacher(string s_tname, string s_tdob, float s_tsalary, string s_tempid, string s_tdept, float s_texp) {
         tname = s_tname;
         tdob = s_tdob;
@@ -35,7 +32,6 @@ public:
         texp = s_texp;
     }
 
-    // Copy constructor
     Teacher(const Teacher &cy_tech) {
         tname = cy_tech.tname;
         tdob = cy_tech.tdob;
@@ -59,11 +55,11 @@ public:
 };
 
 int main() {
-    Teacher t1("Teacher 1", "12-05-1997", 15000, "CECTH007", "CSE", 5);
+    Teacher t1("babby", "12-05-1997", 15000, "CECTH007", "CSE", 5);
     Teacher t2 = t1;
-    Teacher t3("Teacher 2", "11-04-1996", 15000, "CECTH008", "ECE", 4);
-    Teacher t4("Teacher 3", "10-03-1995", 15000, "CECTH009", "ME", 6);
-    Teacher t5("Teacher 4", "09-02-1994", 15000, "CECTH010", "EE", 7);
+    Teacher t3("anitha", "11-04-1996", 30000, "CECTH008", "ECE", 4);
+    Teacher t4("dhanu", "10-03-1995", 45000, "CECTH009", "ME", 6);
+    Teacher t5("ranita", "09-02-1994", 50000, "CECTH010", "EE", 7);
 
     cout << "\n-------Teacher Salary Update: Teacher Details--------" << endl;
     cout << "| Name | DOB | Department | Employee ID | Experience | Salary |" << endl;
@@ -73,7 +69,6 @@ int main() {
     t4.getTeacherDetails();
     t5.getTeacherDetails();
 
-    // Salary update conditions
     if (t2.getSalary() <= 15000) {
         t2.setSalary(t2.getSalary() * 2);
     } else {
@@ -98,7 +93,6 @@ int main() {
         t5.setSalary(t5.getSalary() - 5000);
     }
 
-    // Display updated salaries
     cout << "\n\nAfter Salary Update: Teacher Details" << endl;
     cout << "T1 Salary = " << t1.getSalary() << endl;
     cout << "T2 Salary = " << t2.getSalary() << endl;
