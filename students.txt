@@ -1,0 +1,3 @@
+alice,88.5
+bob,91.2
+charlie,79.8
