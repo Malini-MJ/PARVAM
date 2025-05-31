@@ -1,0 +1,18 @@
+-----------------------------
+Name: rahul
+Age: 25
+College: varuna college
+Course: bca
+Mail ID: richa@gmail.com
+Register No: 234563
+NSS Category: Backward Literacy Program
+-----------------------------
+Name: crisha
+Age: 20
+College: varuna college
+Course: 34667
+Mail ID: crisha@gmail.com
+Register No: 554321
+NSS Category: Environmental Awareness Program
+
+No students found in category: 3
